@@ -1,0 +1,42 @@
+.library{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    background: whitesmoke;
+    box-shadow: 2px 2px 50px gray;
+    overflow-y: scroll;
+    height:100%;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.library-song{
+display: flex;
+align-items: center;
+padding: 1rem 2rem 1rem 2rem;
+// flex-direction: column;
+img{
+    width: 20%;
+}
+&:hover{
+    background: rgb(180, 204, 255);
+}
+}
+
+.song-description{
+    padding:1rem;
+    h3{
+        font-size:0.7rem;
+    }
+    h2{
+        font-size: 0.9rem; 
+    }
+}
+.selected{
+    background:  rgb(193, 213, 255);
+}
+.active-library{
+    transform: translateX(0%);
+    opacity: 1;
+}
